@@ -50,7 +50,7 @@ function submitForm(e){
     setData(users);
     console.log(users);
 
-   location.replace('./pages/dashboard/dashboard.html')
+   windows.location.replace('./Pages/dashboard/dashboard.html')
 
 
 }
