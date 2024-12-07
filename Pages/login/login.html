@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User login</title>
+
+    <style>
+
+      #main {
+        height: 300px;
+        width: 600px;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        border: 1px solid blue;
+      }
+      input{
+        padding: 10px;
+      }
+      body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        padding: 50px 0;
+      }
+
+      .name > span {
+        display: none;
+      }
+      .error {
+        color: red;
+        font-size: 0.5em;
+      }
+
+      .bold-txt {
+        font-size: 2em;
+        font-weight: 900;
+      }
+      .btn {
+        color: red;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      .list-item{
+        display: flex;
+      }
+      .inpEdit{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="main">
+      <h1 style="color: blue;">Login</h1>
+      <form onSubmit="submitForm(event)">
+        <input type="text" id="email" required>
+        <input type="password" id="password" required>
+
+        <input type="submit" value="login" style="background-color: blue; color:white;">
+      </form>
+      <span onClick="window.location.assign('../../index.html')" style="color: blue;">sign up</span>
+
+
+    </div>
+      
+
+    <script src="./login.js"></script>
+  </body>
+</html>
